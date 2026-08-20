@@ -1,47 +1,136 @@
 # Hi, I'm Denys Dolhov 👋
 
-## Data Analyst | Data Quality | Business Intelligence | Operational Analytics
+## Data Analyst | Data Quality | Business Intelligence | Analytics Engineering | Operational Analytics
 
-I work with operational and business data, build analytical dashboards, automate reporting workflows, investigate data-quality issues and turn complex datasets into actionable business insights.
+I work with operational and business data, build analytical systems and dashboards, investigate data-quality issues, automate reporting workflows and turn complex datasets into actionable business insights.
 
-My background combines analytics, logistics operations, data quality and process automation.
+My background combines data analytics, logistics operations, Data Quality, process automation and analytics engineering.
 
-I focus on building practical analytical solutions that help teams monitor performance, identify risks, improve data reliability and make faster decisions.
+I am especially interested in problems where analytics can directly improve operational performance, data reliability and business decision-making.
+
+---
 
 ## Core Areas
 
 - Data Analysis
-- Data Quality
+- Data Quality & Data Reliability
 - Business Intelligence
 - Operational Analytics
 - Logistics Analytics
-- ETL and Data Pipelines
+- Analytics Engineering
+- ETL / ELT Pipelines
+- Data Modeling
 - Reporting Automation
 - Root-Cause Analysis
 - KPI Design
+- Data Reconciliation
+- Anomaly Detection
 - Process Improvement
+
+---
 
 ## Tech Stack
 
 ### Analytics & BI
 
-Power BI • Excel • Looker Studio • Tableau
+Power BI • DAX • Excel • Power Query • Looker Studio • Tableau
 
-### Data
+### Data & Analytics Engineering
 
-Python • SQL • pandas • SQLite • Power Query
+Python • SQL • pandas • NumPy • DuckDB • SQLite • dbt
 
 ### Automation & Integration
 
-Google Apps Script • REST APIs • API Data Extraction • Automated Reporting
+Google Apps Script • REST APIs • API Data Extraction • Automated Reporting • YAML
 
-### Data Quality
+### Data Quality & Reliability
 
-Validation • Anomaly Detection • Reconciliation • Root-Cause Analysis • Data Cleaning • Quality Rules • Process Auditing
+Data Validation • Reconciliation • Anomaly Detection • Data Quality Rules • Root-Cause Analysis • Data Cleaning • Data Observability • Data Contracts
+
+### Testing & Delivery
+
+pytest • Git • GitHub • GitHub Actions • CI/CD
+
+### AI & Decision Intelligence
+
+Grounded LLM Workflows • Factual Validation • Prompt Guardrails • AI Self-Correction • Groq • OpenAI-compatible APIs
 
 ---
 
 # Featured Projects
+
+## Aegis Data Reliability Platform
+
+End-to-end Data Reliability, Analytics Engineering and Decision Intelligence platform built with Python, SQL, DuckDB, dbt, Power BI and grounded AI.
+
+Aegis addresses a common analytics problem:
+
+> Did the KPI change because the business changed, or because the data broke?
+
+The platform simulates a European commerce and logistics environment, injects controlled failures and independently detects whether an anomaly is caused by unreliable data or a real operational incident.
+
+### Platform Scope
+
+- 25,000 orders
+- 22,000 shipments
+- 150,000 tracking events
+- 4,000 customer-support cases
+- 200,000 generated application events
+- 30 warehouses
+- 10 carriers
+- 21 countries
+
+### Data Incident Detection
+
+A controlled purchase-telemetry failure was detected without reading the ground-truth incident file.
+
+- 7 affected days
+- 523 expected purchase events
+- 304 observed
+- 219 missing events
+- 58.13% event coverage during the incident
+- 29.28% revenue capture
+- Data Trust classified as FAILED
+
+### Business Incident Detection
+
+A real operational deterioration was independently detected in Warsaw.
+
+- 27 affected shipment touches
+- 100% delay rate
+- 0% delivery SLA
+- 109.31% average network load
+- 98.63 anomaly score
+- Data Trust remained PASSED
+
+### Root Cause Analysis
+
+Strongest explanatory factor:
+
+**Network Congestion / Warehouse Overload**
+
+The project also includes:
+
+- Bronze / Silver / Gold warehouse architecture
+- DuckDB analytical warehouse
+- dbt staging, Silver and Gold models
+- Data observability and reconciliation controls
+- Business anomaly detection
+- Root-cause hypothesis ranking
+- Unified incident classification
+- Customer-impact analysis
+- 7-page Power BI Control Tower
+- pytest regression contracts
+- GitHub Actions CI
+- Grounded AI executive reporting
+- Automated factual validation
+- LLM self-correction
+
+The AI validation layer also detected a real factual error in an initial generated report and automatically corrected it before the final executive output was accepted.
+
+[View Aegis Data Reliability Platform](https://github.com/dench1k12341/aegis-data-reliability-platform)
+
+---
 
 ## European Logistics Intelligence
 
@@ -89,6 +178,8 @@ The project also includes:
 - Geospatial route visualization
 - Power BI executive dashboard
 
+> Precision, Recall and F1 results refer only to the controlled synthetic validation scenario.
+
 [View European Logistics Intelligence](https://github.com/dench1k12341/european-logistics-intelligence)
 
 ---
@@ -97,7 +188,7 @@ The project also includes:
 
 End-to-end job-market analytics platform built with Python, SQL, SQLite and Power BI.
 
-The pipeline collects job-market data from multiple public APIs, normalizes heterogeneous datasets, validates data quality, classifies analytics roles, extracts technical skills and produces market insights.
+The pipeline collects job-market data from multiple public APIs, normalizes heterogeneous datasets, validates Data Quality, classifies analytics roles, extracts technical skills and produces market insights.
 
 ### Project Results
 
@@ -114,7 +205,7 @@ The pipeline collects job-market data from multiple public APIs, normalizes hete
 
 The project demonstrates:
 
-- API ingestion
+- Multi-source API ingestion
 - ETL pipelines
 - Data validation
 - Job classification
@@ -130,34 +221,53 @@ The project demonstrates:
 
 ## What I Build
 
-I am especially interested in projects where analytics can directly improve operations.
+I am especially interested in analytical systems that connect data engineering with real business decisions.
 
 Examples include:
 
-- Operational KPI dashboards
-- Data Quality monitoring
-- Logistics performance analysis
-- Automated reporting
-- API-based data pipelines
+- Executive KPI dashboards
+- Data Quality monitoring systems
+- Data Reliability platforms
+- Logistics performance analytics
+- Operational Control Towers
+- Automated reporting workflows
+- API-based analytics pipelines
+- Data reconciliation frameworks
 - Risk and anomaly detection
-- Process performance analysis
-- Management reporting
-- Data validation and reconciliation
+- Root-cause analysis
+- Process-performance analytics
+- Decision-support systems
+- Analytics Engineering pipelines
 
 ---
 
 ## Current Focus
 
-Currently strengthening my expertise in:
+Currently deepening my expertise in:
 
 - Advanced SQL
 - Power BI and DAX
+- Analytics Engineering with dbt
+- Data Modeling
+- Data Quality and Observability
 - Python analytics pipelines
-- Data Quality frameworks
-- Data modeling
+- Data Reliability Engineering
 - Business Intelligence
-- Operational and logistics analytics
-- API-based analytics
+- Operational Analytics
+- AI-assisted analytics with factual grounding
+
+---
+
+## Engineering Principles
+
+I try to build analytics around a few simple principles:
+
+- Validate data before trusting the KPI
+- Separate Data Quality failures from real business problems
+- Keep analytical logic reproducible
+- Automate repetitive reporting and validation
+- Use AI to explain validated evidence, not replace analytical reasoning
+- Design dashboards around decisions, not just charts
 
 ---
 
